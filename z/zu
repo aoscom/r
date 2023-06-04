@@ -1,0 +1,15 @@
+/// https://www.erisu.net/?PAap=RefCell
+/// 循環参照(メモリを時間と共に食いつぶしていく)
+use std::cell::RefCell;
+use std::rc::Rc;
+
+struct St { _x: i32, c: Option<Rc<RefCell<St>>> }
+
+fn main() {
+    loop {
+        let x = Rc::new(RefCell::new(St { _x: 1, c: None }));
+        let y = Rc::new(RefCell::new(St { _x: 2, c: None }));
+        x.borrow_mut().c = Some(Rc::clone(&y)); // お互い相手を参照
+        y.borrow_mut().c = Some(Rc::clone(&x));
+    }
+}
