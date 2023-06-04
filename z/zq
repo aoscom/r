@@ -1,0 +1,13 @@
+/// https://www.erisu.net/?PAap=Ordering
+/// 値の大小を比較
+use std::cmp::Ordering;
+
+fn main() {
+    let (x, y) = (4, 5);
+
+    match x.cmp(&y) { // xとyを比較
+        Ordering::Less => println!("xが小さい"),
+        Ordering::Greater => println!("xが大きい"),
+        Ordering::Equal => println!("同値"),
+        }
+}
