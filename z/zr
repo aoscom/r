@@ -1,0 +1,14 @@
+/// https://www.erisu.net/?PAap=Weak
+use std::cell::RefCell;
+use std::rc::{Rc, Weak};
+
+struct St { _x: i32, c: Option<Weak<RefCell<St>>> }
+
+fn main() {
+    loop {
+        let x = Rc::new(RefCell::new(St { _x: 1, c: None }));
+        let y = Rc::new(RefCell::new(St { _x: 2, c: None }));
+        x.borrow_mut().c = Some(Rc::downgrade(&y)); // お互い相手を参照(弱結合のためメモリは解放される)
+        y.borrow_mut().c = Some(Rc::downgrade(&x));
+    }
+}
