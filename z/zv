@@ -1,0 +1,10 @@
+/// https://www.erisu.net/?PAap=rand
+/// 乱数を生成 (rand v0.8.5)
+/// thread_rng：乱数生成器 現在のスレッドに固有でOSからシード値を得ている
+/// gen_range：Rngトレイトに実装されている
+use rand::Rng;
+
+fn main() {
+    let r = rand::thread_rng().gen_range(1..101);
+    println!("1～100のうちの{}", r);
+}
