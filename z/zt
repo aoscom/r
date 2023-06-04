@@ -1,0 +1,16 @@
+/// https://www.erisu.net/?PAap=Display
+/// Displayの簡易実装例
+use std::fmt::{Display, Formatter, Result};
+struct St {
+    x: i32,
+    y: String,
+}
+impl Display for St {
+    fn fmt(&self, f: &mut Formatter) -> Result {
+        write!(f, "{}: {}", self.x, self.y)
+    }
+}
+fn main() {
+    let st = St { x: 3, y: "string".to_string() };
+    println!("{}", st);
+}
