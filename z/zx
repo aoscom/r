@@ -1,0 +1,25 @@
+/// https://www.erisu.net/?PAap=%E3%83%AB%E3%83%BC%E3%83%97%E3%83%A9%E3%83%99%E3%83%AB
+/// ループラベル
+/// xが3になると'a2の外('aのloop)へ
+/// xが6になると'a1の外(コード終了)へ
+fn main() {
+    let mut x = 0;
+
+    'a1: loop {
+        println!("A{}", x); x += 1;
+
+        'a2: loop {
+            println!("B{}", x); x += 1;
+            if x == 3 { break 'a2; }
+            if x == 6 { break 'a1; }
+        }
+    }
+}
+/* 出力
+A0
+B1
+B2
+A3
+B4
+B5
+*/
