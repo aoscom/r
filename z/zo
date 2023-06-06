@@ -1,0 +1,38 @@
+/// https://www.erisu.net/?PAap=VSCode
+/// Rust環境の設定例
+
+[拡張機能]
+Git History 0.6.19：Shift+Ctrl+Pでログ表示
+Guides 0.9.3：インデントの縦線を表示
+Japanese Language Pack for Visual Studio Code 1.62.3
+rust-analyzer 0.2.817：RLS代替
+Sort lines 1.9.0：F9で行ソート
+Verdigris light theme 0.0.2：Rust用テーマ
+Vscode Google Translate 1.4.13：Google翻訳(文字列選択&Alt+Shift+T)
+
+[ファイル >> ユーザー設定 >> 設定]
+editor:font family Myrica M
+
+[ファイル >> ユーザー設定 >> キーボード ショートカット]
+すべて折りたたみ：Ctrl+Shift+\
+すべて展開：Ctrl+Shift+/
+
+[Git インストール設定]
+C:\Program Files\Git
+Git LFS (Large File Support)以外チェック外す
+Don't create a Start Menu folder
+Use Visual Studio Code as Git's default editor
+Git from the command line and also from 3rd-party software
+Use the OpenSSL library
+Checkout as-is, commit as-is
+Use Windows' default console window
+3つともチェック
+チェック外したまま インストール開始
+
+[アップデート] git update-git-for-windows
+[設定ファイル] C:\ProgramData\Git\config
+
+[初期設定]
+C:\Program Files\Git\git-cmd.exe
+git config --global user.name "{user name}"
+git config --global user.email "{email}"
