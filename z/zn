@@ -1,0 +1,12 @@
+// ブラウザの判別コード
+const agent = window.navigator.userAgent.toLowerCase();
+var bro = "";
+
+if (agent.indexOf("msie") != -1 || agent.indexOf("trident") != -1) { bro = "Internet Explorer" }
+else if (agent.indexOf("edg") != -1 || agent.indexOf("edge") != -1) { bro = "Microsoft Edge" }
+else if (agent.indexOf("opr") != -1 || agent.indexOf("opera") != -1) { bro = "Opera" }
+else if (agent.indexOf("chrome") != -1) { bro = "Google Chrome" }
+else if (agent.indexOf("safari") != -1) { bro = "Safari" }
+else if (agent.indexOf("firefox") != -1) { bro = "FireFox" }
+else if (agent.indexOf("opr") != -1 || agent.indexOf("opera") != -1) { bro = "Opera" }
+console.log(bro);
