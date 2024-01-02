@@ -1,4 +1,4 @@
-/// https://www.erisu.net/?PAap=RefCell
+/// https://www.aaoos.com/?PAap=RefCell
 /// 循環参照(メモリを時間と共に食いつぶしていく)
 use std::cell::RefCell;
 use std::rc::Rc;
