@@ -1,4 +1,4 @@
-// https://www.erisu.net/?PAap=.userAgent
+// https://www.aaoos.com/?PAap=.userAgent
 // ブラウザの判別コード
 const agent = window.navigator.userAgent.toLowerCase();
 var bro = "";
