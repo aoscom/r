@@ -1,4 +1,4 @@
-/// https://www.erisu.net/?PAap=%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB
+/// https://www.aaoos.com/?PAap=%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB
 /// 指定ファイルをまるごとコピーし､新たなファイルを生成します(以下行が起動例/f1.txtからf2.txtを生成)
 /// cargo run f1.txt f2.txt
 use std::io::{Read, Write};
