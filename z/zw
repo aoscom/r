@@ -7,7 +7,7 @@ use ferris_says::say;
 use std::io::{ stdout, BufWriter };
 
 fn main() {
-    let s = "erisu.net";
+    let s = "aaoos.com";
 
     let mut writer = BufWriter::new(stdout());
     say(s, s.len(), &mut writer).unwrap();
