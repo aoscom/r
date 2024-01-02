@@ -1,4 +1,4 @@
-/// https://www.erisu.net/?PAap=Display
+/// https://www.aaoos.com/?PAap=Display
 /// Displayの簡易実装例
 use std::fmt::{Display, Formatter, Result};
 struct St {
