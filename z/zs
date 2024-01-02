@@ -1,4 +1,4 @@
-/// https://www.erisu.net/?PAap=stdin
+/// https://www.aaoos.com/?PAap=stdin
 /// 標準入力から入力値を取得し､表示
 /// stdin：標準入力のハンドラを返す
 /// read_line：成功時､Ok(入力バイト数)を返す
